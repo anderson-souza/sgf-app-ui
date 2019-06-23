@@ -1,0 +1,21 @@
+<h3>
+  Cadastro de Paises
+</h3>
+<div class="ui-g ui-fluid">
+  <div class="ui-g-12 ui-md-4">
+    <div class="ui-inputgroup">
+      <span class="ui-inputgroup-addon"><i class="fa fa-user"></i></span>
+      <input type="text" required name="nome" pInputText placeholder="Nome" [(ngModel)]="pais.nome">
+    </div>
+  </div>
+  <br>
+  <div class="ui-g-12 ui-md-4">
+    <p-dropdown [options]="paisDropdown" [(ngModel)]="pais.status"></p-dropdown>
+  </div>
+  {{pais | json}}
+  <div class="ui-g-12 ui-md-4">
+    <div class="ui-inputgroup">
+      <p-button label="Inserir" (onClick)="salvarPais()"></p-button>
+    </div>
+  </div>
+</div>

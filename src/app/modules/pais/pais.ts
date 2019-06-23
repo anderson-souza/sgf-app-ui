@@ -1,9 +1,9 @@
 export class Pais {
   public id: number;
   public nome: string;
-  public status: string;
+  public status: number;
   constructor() {
     this.nome = '';
-    this.status = '';
+    this.status = 1;
   }
 }

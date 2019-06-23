@@ -31,6 +31,10 @@ export class PaisComponent implements OnInit {
     );
   }
 
+  editarPais(id: number){
+
+  }
+
   deletarPais(id: number) {
     this.confirmationService.confirm({
       message: 'Tem certeza que deseja excluir este registro?',
